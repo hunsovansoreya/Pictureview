@@ -45,7 +45,8 @@
                                     </div>
 
                                     <div class="text">
-                                        <h2></h2>
+                                    <h2>{{$count = DB::table('images')->count()}}</h2>
+
                                         <span>Image</span>
                                     </div>
                                 </div>

@@ -13,6 +13,7 @@ class ListimageController extends Controller
     public function index()
     {
         $listimage = Image::paginate(10);
+
         return view('admin.listimage')->with('listimage', $listimage);
     }
 

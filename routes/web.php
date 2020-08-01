@@ -49,5 +49,6 @@ Route::group(['middleware' => ['auth','admin']], function(){
     Route::patch('/admin/update/{id}', 'Admin\AddimageController@editimage')->name('admin.update');
     Route::delete('/service_delete/{id}','Admin\AddimageController@deleteimage');
     Route::get('/search','Admin\ListimageController@search');
+     Route::get('/count','Admin\ListimageController@count');
 });
 
