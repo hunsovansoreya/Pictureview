@@ -15,4 +15,14 @@ class ListimageController extends Controller
         $listimage = Image::paginate(10);
         return view('admin.listimage')->with('listimage', $listimage);
     }
+
+    public function search(Request $request)
+    {
+
+        $search = $request->get('search');
+
+        $listimage = DB::table('images')->where('name','LIKE', '%' . $search . '%')->paginate(5);
+        return view('admin.listimage', ['listimage' => $listimage]);
+    }
+
 }
