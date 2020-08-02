@@ -66,7 +66,7 @@
 <!-- Main JS-->
 <script src="{{ URL::asset('js/main.js')}}"></script>
 <script src="{{ URL::asset('vendor/sweetalert/sweetalert.min.js')}}"></script>
-<script src="{{ URL::asset('https://unpkg.com/sweetalert/dist/sweetalert.min.js')}}"></script>
+{{-- <script src="{{ URL::asset('https://unpkg.com/sweetalert/dist/sweetalert.min.js')}}"></script> --}}
 
 </body>
 

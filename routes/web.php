@@ -1,6 +1,8 @@
 <?php
 
 use App\Models\Image;
+use GuzzleHttp\Psr7\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 /*
@@ -16,10 +18,6 @@ use Illuminate\Support\Facades\Route;
  */
 
 
-Route::get('/gallery', function () {
-    $pro = Image::paginate(20);
-    return view('frontend.gallery', compact('pro'));
-});
 Route::get('/contact', function () {
     return view('frontend.contact');
 });
@@ -34,7 +32,7 @@ Auth::routes(['verify'=>true]);
 
 Route::get('/', 'HomeController@index')->name('home');
 
-
+Route::get('/gallery', 'HomeController@show')->name('gallery');
 Route::group(['middleware' => ['auth','admin']], function(){
     Route::get('/dashboard', function () {
         return view('admin.dashboard');
@@ -50,5 +48,7 @@ Route::group(['middleware' => ['auth','admin']], function(){
     Route::get('/editimage/{imageId}', 'Admin\AddimageController@show');
     Route::patch('/admin/update/{id}', 'Admin\AddimageController@editimage')->name('admin.update');
     Route::delete('/service_delete/{id}','Admin\AddimageController@deleteimage');
+    Route::get('/search','Admin\ListimageController@search');
+     Route::get('/count','Admin\ListimageController@count');
 });
 
