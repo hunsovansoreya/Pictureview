@@ -4,8 +4,7 @@
         <div class="row">
             <div class="col-sm-4 col-md-3 order-2 order-sm-1">
                 <div class="header__social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
+
                 </div>
             </div>
             <div class="col-sm-4 col-md-6 order-1 order-md-2 text-center">
@@ -15,7 +14,9 @@
             </div>
             <div class="col-sm-4 col-md-3 order-3 order-sm-3">
 					<div class="header__switches">
-						<a href="#" class="nav-switch"><i class="fa fa-bars"></i></a>
+                        <a href="#" class="nav-switch"><i class="fa fa-bars"></i></a>
+                       <a href="https://web.facebook.com/%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B9%E1%9E%98%E1%9E%87%E1%9E%B6%E1%9E%82%E1%9F%86%E1%9E%93%E1%9E%B7%E1%9E%8F-102741504833627/"><i class="fa fa-facebook"></i></a>
+                       <a href="#"><i class="fa fa-instagram"></i></a>
 					</div>
                 </div>
 
