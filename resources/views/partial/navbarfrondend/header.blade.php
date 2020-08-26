@@ -13,7 +13,12 @@
                     <img src="img/logo.png" alt="" />
                 </a>
             </div>
-           
+            <div class="col-sm-4 col-md-3 order-3 order-sm-3">
+					<div class="header__switches">
+						<a href="#" class="nav-switch"><i class="fa fa-bars"></i></a>
+					</div>
+                </div>
+
         </div>
         <nav class="main__menu">
             <ul class="nav__menu">
@@ -35,7 +40,7 @@
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
-                    </form>
+                    </form>;
                     @endguest
                 </li>
             </ul>

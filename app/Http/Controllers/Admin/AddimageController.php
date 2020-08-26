@@ -66,7 +66,7 @@ class AddimageController extends Controller
         $rule = [
             'image' => ['sometimes', 'image', 'mimes:jpg,png,jpeg,gif', 'max:2048'],
 
-            'name' => ['sometimes', 'min:5', 'string'],
+            'name' => ['sometimes', 'min:2', 'string'],
         ];
 
          $validator = Validator::make($request->all(), $rule);
