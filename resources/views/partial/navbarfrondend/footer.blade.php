@@ -1,12 +1,9 @@
 <footer class="footer-distributed">
 
 			<div class="footer-left">
-
 				<h3>Picture<span>View</span></h3>
-
 				<p class="footer-links">
-					<a href="/">Home</a>
-					·
+					<a href="/">Home</a>·
 					<a href="/gallery">Gallery</a>
 					·
 					<a href="/about">About</a>

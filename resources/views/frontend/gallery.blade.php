@@ -19,7 +19,7 @@
                 <div class="col-lg-5">
                 </div>
                   <div class="col-lg-7">
-              {{$pro->links()}}
+            
                   </div>
             </div>
         </div>

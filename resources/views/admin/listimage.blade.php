@@ -23,8 +23,8 @@
                                 <tr>
                                     <input type="hidden" class="serdelete_val" value="{{$data->id}}">
 
-                                    <?php $i++; ?>
-                                    <td>{{$i}}</td>
+                                   
+                                    <td>{{$i ?? ''}}</td>
                                     <td>`
                                         <img src={{url('img', $data->image)}} alt=image width="80">
                                     </td>
