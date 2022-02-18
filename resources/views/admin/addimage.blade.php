@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    Add Image
+    Add Images
 @endsection
 @section('content')
     <!-- MAIN CONTENT-->
